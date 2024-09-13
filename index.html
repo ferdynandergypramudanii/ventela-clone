@@ -13,27 +13,34 @@
 <body>
     <header class="py-3 font-montserrat border-b-2 border-slate-300 shadow-sm">
         <nav class="container">
-            <div class=" h-24 flex flex-row justify-between items-center border border-black">
+            <div class=" h-24 flex flex-row justify-between items-center">
                 <div>
                     <h1 class="text-4xl font-bold text-logo ">ventela</h1>
                 </div>
                 <div id="nav-menu"
-                    class="w-full absolute top-0 -right-[100%] bg-secondary min-h-[100vh] text-white lg:static duration-300">
-                    <div class="px-10 mt-20">
-                        <ul class="flex flex-col  lg:flex-row lg:gap-x-5 font-bold text-sm lg:text-base gap-y-5">
-                            <li class="text-white border"><a href="">HOME</a></li>
-                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">ABOUT</a></li>
-                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">PRODUCTS</a></li>
-                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">SIZE CHART</a></li>
-                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">FAQ</a></li>
-                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">CONTACT</a></li>
+                    class="w-full absolute top-0 -right-[100%] bg-secondary min-h-[100vh] text-white lg:static  lg:bg-transparent lg:w-auto lg:min-h-fit lg:text-secondary duration-300 ">
+                    <div class="px-10 mt-20 lg:mt-0 lg:px-0">
+                        <ul
+                            class="flex flex-col text-sm gap-y-5 lg:flex-row lg:gap-y-0 lg:gap-x-5 xl:gap-x-10 font-bold lg:text-base">
+                            <li class="duration-300 text-white lg:text-black lg:hover:text-primary"><a href="">HOME</a>
+                            </li>
+                            <li class="duration-300 text-white lg:text-black lg:hover:text-primary"><a href="">ABOUT</a>
+                            </li>
+                            <li class="duration-300 text-white lg:text-black lg:hover:text-primary"><a
+                                    href="">PRODUCTS</a></li>
+                            <li class="duration-300 text-white lg:text-black lg:hover:text-primary"><a href="">SIZE
+                                    CHART</a></li>
+                            <li class="duration-300 text-white lg:text-black lg:hover:text-primary"><a href="">FAQ</a>
+                            </li>
+                            <li class="duration-300 text-white lg:text-black lg:hover:text-primary"><a
+                                    href="">CONTACT</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- burger button -->
                 <div class="z-50 lg:hidden">
-                    <i class="text-secondary ri-menu-line text-xl font-bold" id="burgerBtn"></i>
+                    <i class="text-secondary ri-menu-line text-xl font-bold cursor-pointer" id="burgerBtn"></i>
                 </div>
             </div>
         </nav>
@@ -48,5 +55,11 @@
 
 
 
-<!-- -right-[100%] -->
-<!-- burger klik -> -right toggle 40% -->
+<!-- 
+right-[100%] 
+burger klik -> -right toggle 40% 
+
+-right[40%] pertama berhasil, tapi yang kedua gagal, setelah mencoba pake class di input.css lalu di toggle akhirnya berhasil
+     
+     
+-->

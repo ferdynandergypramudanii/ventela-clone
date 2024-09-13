@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
-  @apply text-white;
+.swipe-left {
+  @apply -right-[40%];
 }
