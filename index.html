@@ -5,12 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
+
+    <!-- remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline bg-teal-400">
-        Hello world!
-    </h1>
+    <header class="py-3 font-montserrat border-b-2 border-slate-300 shadow-sm">
+        <nav class="container">
+            <div class=" h-24 flex flex-row justify-between items-center border border-black">
+                <div>
+                    <h1 class="text-4xl font-bold text-logo ">ventela</h1>
+                </div>
+                <div id="nav-menu"
+                    class="w-full absolute top-0 -right-[100%] bg-secondary min-h-[100vh] text-white lg:static duration-300">
+                    <div class="px-10 mt-20">
+                        <ul class="flex flex-col  lg:flex-row lg:gap-x-5 font-bold text-sm lg:text-base gap-y-5">
+                            <li class="text-white border"><a href="">HOME</a></li>
+                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">ABOUT</a></li>
+                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">PRODUCTS</a></li>
+                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">SIZE CHART</a></li>
+                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">FAQ</a></li>
+                            <li class="duration-300 text-white lg:hover:text-primary"><a href="">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- burger button -->
+                <div class="z-50 lg:hidden">
+                    <i class="text-secondary ri-menu-line text-xl font-bold" id="burgerBtn"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
+
+
+
+
+<!-- -right-[100%] -->
+<!-- burger klik -> -right toggle 40% -->
