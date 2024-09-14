@@ -8,10 +8,13 @@
 
     <!-- remixicon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- swiperjs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <header class="py-3 font-montserrat border-b-2 border-slate-300 shadow-sm">
+    <header class="w-full py-3 font-montserrat border-b-2 border-slate-300 shadow-sm fixed top-0 left-0 bg-white z-50">
         <nav class="container">
             <div class=" h-24 flex flex-row justify-between items-center">
                 <div>
@@ -46,7 +49,17 @@
         </nav>
     </header>
 
+    <section id="hero" class="w-full pt-28">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="./img/home1.png" alt="">
+                <img class="swiper-slide" src="./img/home2.png" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 

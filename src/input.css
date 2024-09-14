@@ -5,3 +5,7 @@
 .swipe-left {
   @apply -right-[40%];
 }
+
+.swiper {
+  @apply w-full;
+}
