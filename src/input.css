@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply scroll-smooth;
+}
+
 .swipe-left {
   @apply -right-[40%];
 }

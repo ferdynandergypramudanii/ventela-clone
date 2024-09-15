@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       montserrat: ["montserrat", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
     },
     extend: {
       colors: {
@@ -17,7 +18,7 @@ module.exports = {
       sm: "340px",
       md: "540px",
       lg: "768px",
-      xl: "1180px",
+      xl: "1200px",
     },
     container: {
       center: true,
