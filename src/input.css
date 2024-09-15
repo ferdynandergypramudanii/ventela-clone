@@ -9,3 +9,15 @@
 .swiper {
   @apply w-full;
 }
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000000 !important;
+  opacity: 1 !important;
+}

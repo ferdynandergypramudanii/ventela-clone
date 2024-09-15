@@ -604,16 +604,16 @@ video {
   right: -100%;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-\[100\%\] {
   right: 100%;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.left-0 {
-  left: 0px;
 }
 
 .z-50 {
@@ -751,6 +751,18 @@ video {
 
 .swiper {
   width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  opacity: 1 !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000000 !important;
+  opacity: 1 !important;
 }
 
 @media (min-width: 768px) {
