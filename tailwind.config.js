@@ -11,6 +11,7 @@ module.exports = {
         logo: "#0f1385",
         primary: "#1a5cd6",
         secondary: "#012d80",
+        tertiary: "#a1a19f",
       },
     },
     screens: {
