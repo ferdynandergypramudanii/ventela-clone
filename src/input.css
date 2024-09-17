@@ -27,17 +27,17 @@ body {
 }
 
 .swiper2 {
-  @apply w-[80%] overflow-hidden;
+  @apply w-[77%] overflow-hidden;
 }
 
 .swiper3 {
-  @apply p-4 w-[80%] overflow-hidden;
+  @apply w-[80%] h-auto lg:h-32 overflow-hidden mt-3;
 }
 
 .button-next {
-  @apply absolute top-[50%] right-8 z-10;
+  @apply absolute top-[50%] -right-1 lg:right-4 xl:right-8 z-10;
 }
 
 .button-prev {
-  @apply absolute top-[50%] left-8 z-10;
+  @apply absolute top-[50%] -left-1 lg:left-4 xl:left-8 z-10;
 }
