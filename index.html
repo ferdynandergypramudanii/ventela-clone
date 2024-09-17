@@ -14,6 +14,7 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
     </style>
 </head>
 
@@ -138,12 +139,11 @@
     <!-- ABOUT US -->
     <section id="about" class="mt-20 lg:relative">
         <img src="./img/aboutUs.webp" alt="">
-
         <div
             class=" w-full px-7 lg:w-1/2 lg:p-12 lg:h-[80%] lg:absolute lg:top-20 xl:top-28 right-0 z-10 bg-white lg:opacity-85 lg:space-y-16">
             <div class="h-full flex flex-col justify-center">
                 <div class="w-full space-y-5 lg:space-y-10 xl:space-y-16">
-                    <h1 class="mt-7 text-2xl text-center lg:text-start xl:text-6xl text-tertiary">ABOUT</h1>
+                    <h1 class="mt-7 text-2xl text-center lg:text-start xl:text-5xl text-tertiary">ABOUT</h1>
                     <div class="space-y-5 text-xs xl:text-lg text-slate-600 font-montserrat text-justify">
                         <p>Ventela® Shoes, sebuah brand sepatu vulacanized lokal diperkenalkan pada
                             tahun 2017 oleh
@@ -171,8 +171,85 @@
         </div>
     </section>
 
-    <section class="mt-20 w-full">
-        <h1>Soon</h1>
+
+
+    <!-- Products -->
+    <section id="products" class="mt-20 w-full">
+        <div class="container">
+            <h1 class="font-montserrat text-5xl text-tertiary text-center">PRODUCTS</h1>
+            <!-- Product Slider -->
+            <div class="w-full flex justify-center mt-5 relative border border-red-700">
+                <div class="swiper2 border border-black">
+                    <div class="swiper-wrapper w-full">
+                        <div class="swiper-slide"><img src="./img/shoe1.webp" alt="shoe1"></div>
+                        <div class="swiper-slide"><img src="./img/shoe2.webp" alt="shoe2"></div>
+                        <div class="swiper-slide"><img src="./img/shoe3.webp" alt="shoe3"></div>
+                        <div class="swiper-slide"><img src="./img/shoe4.webp" alt="shoe4"></div>
+                        <div class="swiper-slide"><img src="./img/shoe4.webp" alt="shoe5"></div>
+                        <div class="swiper-slide"><img src="./img/shoe4.webp" alt="shoe6"></div>
+                        <div class="swiper-slide"><img src="./img/shoe4.webp" alt="shoe7"></div>
+                        <div class="swiper-slide"><img src="./img/shoe4.webp" alt="shoe8"></div>
+                        <div class="swiper-slide"><img src="./img/shoe4.webp" alt="shoe9"></div>
+                        <div class="swiper-slide"><img src="./img/shoe4.webp" alt="shoe10"></div>
+                        <div class="swiper-slide"><img src="./img/shoe4.webp" alt="shoe11"></div>
+                        <div class="swiper-slide"><img src="./img/shoe4.webp" alt="shoe12"></div>
+                    </div>
+                    <div class="button-next"><i class="ri-arrow-right-wide-line text-5xl text-slate-800"></i></div>
+                    <div class="button-prev"><i class="ri-arrow-left-wide-line text-5xl text-slate-800"></i></div>
+                </div>
+            </div>
+            <!-- Name Slider -->
+            <div class="mt-0 w-full flex justify-center">
+                <div class="swiper3 border border-red-600 relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">Republic</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">New Public</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">All Is Well</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">Armor</h1>
+                        </div>
+                        --
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">Urban</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">Sang Sekerta</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">P'76 (public) Gum Series </h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">Hard13 Noir</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">Public Suede Series</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">Back To 70's Series</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">P'76 (public) Series</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <h1 class="text-4xl font-poppins font-semibold text-center">Gum (bts) Series</h1>
+                        </div>
+                    </div>
+                    <div class="absolute w-72 h-auto inset-0 m-auto bg-gray-600 z-40 opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-40">
+        <div>
+            <h1>Test</h1>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

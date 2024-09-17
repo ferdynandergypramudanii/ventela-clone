@@ -25,3 +25,19 @@ body {
   background-color: #000000 !important;
   opacity: 1 !important;
 }
+
+.swiper2 {
+  @apply w-[80%] overflow-hidden;
+}
+
+.swiper3 {
+  @apply p-4 w-[80%] overflow-hidden;
+}
+
+.button-next {
+  @apply absolute top-[50%] right-8 z-10;
+}
+
+.button-prev {
+  @apply absolute top-[50%] left-8 z-10;
+}

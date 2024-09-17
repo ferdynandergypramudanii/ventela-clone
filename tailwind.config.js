@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       montserrat: ["montserrat", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
     },
     extend: {
       colors: {

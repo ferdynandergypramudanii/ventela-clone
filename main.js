@@ -9,7 +9,7 @@ burgerBtn.addEventListener("click", () => {
   navMenu.classList.toggle("swipe-left");
 });
 
-// swiperjs
+// swiperjs1
 const swiper = new Swiper(".swiper", {
   loop: true,
   autoplay: {
@@ -21,3 +21,22 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+const swiper2 = new Swiper(".swiper2", {
+  loop: true,
+
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+});
+
+const swiper3 = new Swiper(".swiper3", {
+  loop: true,
+
+  slidesPerView: 1,
+  spaceBetween: 10,
+});
+swiper2.controller.control = swiper3;
