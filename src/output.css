@@ -1068,10 +1068,6 @@ body {
     margin-top: 5rem;
   }
 
-  .lg\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
   .lg\:hidden {
     display: none;
   }
@@ -1202,6 +1198,10 @@ body {
 @media (min-width: 1200px) {
   .xl\:top-28 {
     top: 7rem;
+  }
+
+  .xl\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .xl\:w-\[26\%\] {
