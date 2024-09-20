@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./node_modules/flowbite/**/*.js"],
   theme: {
     fontFamily: {
       montserrat: ["montserrat", "sans-serif"],
