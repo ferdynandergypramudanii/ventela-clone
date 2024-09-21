@@ -40,3 +40,14 @@ const swiper3 = new Swiper(".swiper3", {
   spaceBetween: 10,
 });
 swiper2.controller.control = swiper3;
+
+// Faq
+const question = document.getElementById("question");
+const answer = document.getElementById("answer");
+const arrow = document.getElementById("arrowIcon");
+
+question.addEventListener("click", () => {
+  answer.classList.toggle("hidden");
+  arrow.classList.toggle("ri-arrow-down-s-line");
+  arrow.classList.toggle("ri-arrow-up-s-line");
+});
