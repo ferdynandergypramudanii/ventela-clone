@@ -41,13 +41,25 @@ const swiper3 = new Swiper(".swiper3", {
 });
 swiper2.controller.control = swiper3;
 
-// Faq
-const question = document.getElementById("question");
-const answer = document.getElementById("answer");
-const arrow = document.getElementById("arrowIcon");
+// FAQ
+const accordions = document.querySelectorAll(".accordion");
+const answers = document.querySelectorAll(".answer");
 
-question.addEventListener("click", () => {
-  answer.classList.toggle("hidden");
-  arrow.classList.toggle("ri-arrow-down-s-line");
-  arrow.classList.toggle("ri-arrow-up-s-line");
+function closeAnswer() {
+  answers.forEach((answer) => {
+    answer.classList.add("hidden");
+  });
+}
+
+accordions.forEach((accordion) => {
+  accordion.addEventListener("click", function () {
+    closeAnswer();
+
+    const answer = this.querySelector(".answer");
+    answer.classList.toggle("hidden");
+
+    const arrowIcon = this.querySelector("i");
+    arrowIcon.classList.toggle("ri-arrow-down-s-line");
+    arrowIcon.classList.toggle("ri-arrow-up-s-line");
+  });
 });
