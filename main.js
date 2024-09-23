@@ -45,21 +45,49 @@ swiper2.controller.control = swiper3;
 const accordions = document.querySelectorAll(".accordion");
 const answers = document.querySelectorAll(".answer");
 
-function closeAnswer() {
-  answers.forEach((answer) => {
-    answer.classList.add("hidden");
-  });
-}
+let activeAccordion = null; // Untuk menyimpan accordion yang sedang aktif
 
 accordions.forEach((accordion) => {
   accordion.addEventListener("click", function () {
-    closeAnswer();
-
     const answer = this.querySelector(".answer");
-    answer.classList.toggle("hidden");
-
     const arrowIcon = this.querySelector("i");
-    arrowIcon.classList.toggle("ri-arrow-down-s-line");
-    arrowIcon.classList.toggle("ri-arrow-up-s-line");
+
+    // Cek apakah accordion yang diklik adalah accordion yang sama dengan yang aktif
+    if (activeAccordion === this) {
+      // Toggle hidden jika accordion yang sama diklik lagi
+      answer.classList.toggle("hidden");
+      arrowIcon.classList.toggle("ri-arrow-down-s-line");
+      arrowIcon.classList.toggle("ri-arrow-up-s-line");
+
+      // Jika accordion ditutup, reset activeAccordion
+      if (answer.classList.contains("hidden")) {
+        activeAccordion = null;
+      }
+    } else {
+      // Tutup accordion yang aktif sebelumnya
+      closeAnswer();
+
+      // Buka accordion yang baru diklik
+      answer.classList.remove("hidden");
+      arrowIcon.classList.add("ri-arrow-up-s-line");
+      arrowIcon.classList.remove("ri-arrow-down-s-line");
+
+      // Update accordion yang aktif
+      activeAccordion = this;
+    }
   });
 });
+
+function closeAnswer() {
+  if (activeAccordion) {
+    const activeAnswer = activeAccordion.querySelector(".answer");
+    const activeArrowIcon = activeAccordion.querySelector("i");
+
+    // Tutup accordion yang aktif
+    activeAnswer.classList.add("hidden");
+
+    // Reset ikon panah
+    activeArrowIcon.classList.add("ri-arrow-down-s-line");
+    activeArrowIcon.classList.remove("ri-arrow-up-s-line");
+  }
+}
