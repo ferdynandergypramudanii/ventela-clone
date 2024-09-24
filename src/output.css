@@ -673,12 +673,20 @@ video {
   margin-top: 3rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
 }
 
 .mt-5 {
@@ -735,12 +743,93 @@ video {
   height: 100%;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-\[40\%\] {
+  height: 40%;
+}
+
+.h-\[30\%\] {
+  height: 30%;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-\[90\%\] {
+  height: 90%;
+}
+
+.h-\[30vh\] {
+  height: 30vh;
+}
+
+.h-\[40vh\] {
+  height: 40vh;
+}
+
+.h-\[25vh\] {
+  height: 25vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .max-h-16 {
   max-height: 4rem;
 }
 
+.max-h-\[40\%\] {
+  max-height: 40%;
+}
+
+.max-h-44 {
+  max-height: 11rem;
+}
+
+.max-h-64 {
+  max-height: 16rem;
+}
+
 .min-h-\[100vh\] {
   min-height: 100vh;
+}
+
+.min-h-72 {
+  min-height: 18rem;
+}
+
+.min-h-60 {
+  min-height: 15rem;
+}
+
+.min-h-52 {
+  min-height: 13rem;
+}
+
+.min-h-\[40\%\] {
+  min-height: 40%;
+}
+
+.min-h-\[10\%\] {
+  min-height: 10%;
+}
+
+.min-h-10 {
+  min-height: 2.5rem;
+}
+
+.min-h-\[40vh\] {
+  min-height: 40vh;
 }
 
 .w-1\/4 {
@@ -781,18 +870,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[88\%\] {
-  width: 88%;
-}
-
-.w-\[92\%\] {
-  width: 92%;
 }
 
 .-translate-x-1\/2 {
@@ -875,12 +952,12 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.overflow-y-scroll {
-  overflow-y: scroll;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-b {
@@ -1003,16 +1080,20 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .pt-28 {
   padding-top: 7rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .text-center {
@@ -1059,11 +1140,6 @@ video {
   font-size: 0.7rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1097,6 +1173,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .tracking-widest {
