@@ -91,3 +91,16 @@ function closeAnswer() {
     activeArrowIcon.classList.remove("ri-arrow-up-s-line");
   }
 }
+
+// chat button
+window.addEventListener("scroll", function () {
+  const chatButton = document.getElementById("chatButton");
+
+  if (window.scrollY > 400) {
+    chatButton.classList.remove("opacity-0");
+    chatButton.classList.add("opacity-100");
+  } else {
+    chatButton.classList.remove("opacity-100");
+    chatButton.classList.add("opacity-0");
+  }
+});

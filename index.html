@@ -22,14 +22,14 @@
 
 <body>
     <header class="w-full py-3 font-montserrat border-b-2 border-slate-300 shadow-sm fixed top-0 left-0 bg-white z-50">
-        <nav class="container">
-            <div class=" h-24 flex flex-row justify-between items-center">
+        <nav class="container flex justify-center">
+            <div class="w-[85%] h-24 flex flex-row justify-between items-center">
                 <div>
                     <a href="index.html" class="text-4xl font-bold text-logo cursor-pointer">ventela</a>
                 </div>
                 <div id="nav-menu"
                     class="w-full absolute top-0 -right-[100%] bg-secondary min-h-[100vh] text-white lg:static  lg:bg-transparent lg:w-auto lg:min-h-fit lg:text-secondary duration-300 ">
-                    <div class="px-10 mt-20 lg:mt-0 lg:px-0">
+                    <div class="px-20 mt-20 lg:mt-0 lg:px-0">
                         <ul
                             class="flex flex-col text-sm gap-y-5 lg:flex-row lg:gap-y-0 lg:gap-x-5 xl:gap-x-10 font-bold lg:text-base">
                             <li class="duration-300 text-white lg:text-black lg:hover:text-primary"><a href="">HOME</a>
@@ -654,12 +654,21 @@
 
                 <!-- copyright -->
                 <div class="lg:w-[82%] mt-20 py-5 lg:py-7">
-                    <p class="text-xs lg:text-sm text-yellow-300 opacity-85">©️ 2024 Ventela clone by Ferdynand Ergy
+                    <p class="text-xs lg:text-sm text-yellow-300 opacity-90">©️ 2024 Ventela clone by Ferdynand Ergy
                         Pramudani</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- button Chat kami -->
+    <div id="chatButton"
+        class="opacity-0 transition-opacity duration-500 ml-5 w-[180px] bg-secondary rounded-t-3xl fixed bottom-0 right-4 z-50 hidden lg:block">
+        <div class="py-3 flex justify-center items-center space-x-3">
+            <img src="./img/buttonChatKami.png" alt="" class="w-8 h-8">
+            <h2 class="text-lg text-white font-montserrat font-bold">Chat kami</h2>
+        </div>
+    </div>
 
     <!-- swiperjs -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -685,4 +694,5 @@ burger klik -> -right toggle 40%
 typografi:
 tracking-wider -> jarak antar huruf
      
+sampek ngakalin pake transition-opacity dari 0(ga kelihatan) ke 100(kelihatan) dengan duration 500
 -->
